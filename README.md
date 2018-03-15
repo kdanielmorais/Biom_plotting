@@ -28,6 +28,7 @@ The help function show the input arguments
 
 After updating the input files the program will creat a .pdf file with the reespective ggplot graph
 
+Into the files list there is a biom file and a metadata file for testing purposes
 
 
 
