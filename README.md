@@ -5,6 +5,8 @@ Represent graphically the .biom data with .txt metadata
 
 The program works as .R script, so in order to use it is necessary to activate it in the terminal.
 
+The program will download all the library needed if necessary
+
 > Rscript Biom_plotting.R 
 
 The help function show the input arguments
