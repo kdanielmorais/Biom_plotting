@@ -1,6 +1,6 @@
 
 ##Checking packages (CRAN)
-list.of.packages = c("optparse", "ggplot2", "stringi", "BIOM.utils")
+list.of.packages = c("optparse", "ggplot2", "stringi") 
 #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages())]
 if(length(new.packages)) 
@@ -23,7 +23,6 @@ if(length(new.packages))
 library("stringi")
 library("phyloseq")
 library("ggplot2")
-library("BIOM.utils")
 library("biomformat")
 library("optparse")
 
@@ -51,7 +50,8 @@ if (is.null(opt$file)){
 a <- opt$file
 b <- opt$tax
 
-dat <- read_biom(a)
+## dat <- read_biom(a)
+suppressWarnings(dat <- read_biom(a))
 met <- read.table(b)
 
 ## Transforming the .biom file in an OTU table
@@ -93,11 +93,9 @@ tax_level = opt$level
 
 ## Grouping according to the choiced taxonomical level
 phy_phy_glom = tax_glom(physeq = phy_total, taxrank = tax_level)
-colSums(otu_table(phy_phy_glom)) 
 
 ## melting the file for porterior use of ggplot function 
 df_melt = psmelt(physeq = phy_phy_glom)
-colnames(df_melt)
 
 df_melt_aggreg1 = aggregate(df_melt$Abundance, by=list(Sample = df_melt$Sample, Group=df_melt$Group, taxa=df_melt[,tax_level]), FUN=sum)
 colnames(df_melt_aggreg1)<-c("Sample","Group", tax_level, "Abundance")
