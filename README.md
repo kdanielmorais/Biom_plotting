@@ -1,4 +1,4 @@
-# Biom_plotting
+# Biom_and_Seed_plotting
 Represent graphically the .biom data with .txt metadata
 
 ## Linux Tutorial
