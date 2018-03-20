@@ -1,5 +1,5 @@
-# Biom_and_Seed_plotting
-Represent graphically the .biom data with .txt metadata
+# Biom and Seed plotting
+Represent graphically the relative abundance of a .biom data with .txt metadata or a Seed
 
 ## Linux Tutorial
 
