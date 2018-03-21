@@ -1,30 +1,39 @@
 # Biom and Seed plotting
-Represent graphically the relative abundance of a .biom data with .txt metadata or a Seed
+Represent graphically the relative abundance of a .biom or .txt data using the samples as the second parameter or the groups if the user add a metadata file.
 
 ## Linux Tutorial
 
 The program works as .R script, so in order to use it is necessary to activate it in the terminal.
 
-> Rscript Biom_plotting.R 
+> Rscript BiomandSeed_plotting_end.R 
 
 The help function show the input arguments
 
 > Rscript Biom_plotting.R --help
 
-> -f CHARACTER, --file=CHARACTER
->		OTU table file name .BIOM [Required]
+> -c CHO, --cho=CHO
+		To utilize a biom file write BIOM and 
+  to utilize a seed file write SEED [Required]
 
->	-t CHARACTER, --tax=CHARACTER
->		metadata file name .txt [Required]
+	-f CHARACTER, --file=CHARACTER
+		BIOM: a .biom Otu_table file
+                SEED: a .txt Otu_table [Required]
 
->	-l CHARACTER, --level=CHARACTER
->		taxonomical level - choose between (Kingdom, Phylum, Class, Order, Family, Genus and Species) [default= Phylum]
+	-t CHARACTER, --tax=CHARACTER
+		SEED: a .txt taxonomical file [Required for seed]
 
->	-o CHARACTER, --out=CHARACTER
->		output file name [default= plot]
+	-m CHARACTER, --met=CHARACTER
+		A metadata file .txt [Optional for SEED and BIOM]
 
->	-h, --help
->		Show this help message and exit
+	-l CHARACTER, --level=CHARACTER
+		taxonomical level - choose between (Kingdom, Phylum, Class, Order, Family, Genus and Species) [default= Phylum]
+
+	-o CHARACTER, --out=CHARACTER
+		output file name [default= plot]
+
+	-h, --help
+		Show this help message and exit
+
 
 After updating the input files the program will creat a .pdf file with the reespective ggplot graph
 
