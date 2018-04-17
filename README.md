@@ -56,3 +56,7 @@ Each time the script is used he reproduces the version and his github link. He w
 In the archives setted in Github there is a biom file, a metadata for the biom, a otu table .txt for seed and a taxonomic for seed to be used as examples.
 
 There is the examples of samples and group graphs to show the appearence of the graphs generated.
+
+### Autors
+Daniel K. Morais
+Elcio A. O. Neto
