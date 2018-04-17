@@ -59,4 +59,5 @@ There is the examples of samples and group graphs to show the appearence of the 
 
 ### Autors
 Daniel K. Morais
+
 Elcio A. O. Neto
