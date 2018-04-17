@@ -6,11 +6,11 @@ There is one Rscript for the 16S database and one for the ITS database
 
 The program works as .R script, so in order to use it is necessary to access his diretory and activate it in the terminal.
 
-> Rscript BiomandSeed_plotting_16S.R 
+    Rscript BiomandSeed_plotting_16S.R 
 
 The help function show the  following input arguments
 
-> Rscript BiomandSeed_plotting_16S.R --help
+    Rscript BiomandSeed_plotting_16S.R --help
 
  	-c CHO, --cho=CHO
 		To utilize a biom file write BIOM and 
@@ -50,8 +50,8 @@ The SEED analysis requires one otu table file .txt and one taxonomical file .txt
 
 Each time the script is used he reproduces the version and his github link. He will reproduce two following entrance exemples as well:
 
-> For a BIOM: Rscript BiomandSeed_plotting_16S.R -c BIOM -m otu_table.biom -l Order -o plot_order
-> For a SEED: Rscript BiomandSeed_plotting_16S.R -c SEED -f otu_table.txt -t taxonomical_classification.txt -l Order -o plot_order 
+    For a BIOM: Rscript BiomandSeed_plotting_16S.R -c BIOM -m otu_table.biom -l Order -o plot_order
+    For a SEED: Rscript BiomandSeed_plotting_16S.R -c SEED -f otu_table.txt -t taxonomical_classification.txt -l Order -o plot_order 
 
 In the archives setted in Github there is a biom file, a metadata for the biom, a otu table .txt for seed and a taxonomic for seed to be used as examples.
 
