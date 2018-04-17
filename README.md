@@ -58,6 +58,6 @@ In the archives setted in Github there is a biom file, a metadata for the biom, 
 There is the examples of samples and group graphs to show the appearence of the graphs generated.
 
 ### Autors
-Daniel K. Morais
+Daniel K. Morais (https://github.com/kdanielmorais)
 
-Elcio A. O. Neto
+Elcio A. O. Neto (https://github.com/ElcioNeto)
