@@ -1,12 +1,12 @@
 library("optparse")
 
-cat ("                                                                                                                                                ")
-cat ("Program version 1.0 --- GitHub link: https://github.com/ElcioNeto/Biom_plotting                                                                 ")
-cat ("                                                                                                                                                ")
+cat ("\n")
+cat ("Program version 1.0 --- GitHub link: https://github.com/kdanielmorais/Biom_plotting \n")
+cat ("\n")
 cat ("Exemples of program inputs:
      For a BIOM: Rscript BiomandSeed_plotting_16S.R  -c BIOM -m otu_table.biom -l Order -o plot_order
-     For a SEED: Rscript BiomandSeed_plotting_16S.R  -c SEED -f otu_table.txt -t taxonomical_classification.txt -l Order -o plot_order                        ")
-cat ("                                                                                                                                                ")
+     For a SEED: Rscript BiomandSeed_plotting_16S.R  -c SEED -f otu_table.txt -t taxonomical_classification.txt -l Order -o plot_order")
+cat ("\n")
 option_list = list(
   make_option(c("-c", "--cho"), type="character", dest= "choice", action= "store", default= "MAB",
               help="To utilize a biom file write BIOM and 
